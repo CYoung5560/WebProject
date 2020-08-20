@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!--Template for the website that will allow for additonal expansion-->
+<html lang="en"> <!--My template-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta hhtp-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Weclome Post</title>
+</head>
+<body>
+    <div class="myNav">
+        <a class="Logo" href="index.html">
+           <img id="navLogo" class="Logo" src="images/mathammer.png" alt="Logo">
+        </a>
+       <nav class="navMenu" role="navigation">
+           <a href="index.html">Home</a>
+           <a href="forum.html">Community</a>
+           <a href="login.html">Log in/Sign up</a>
+           <!--Log in section/profile & signout if logged in-->
+       </nav>
+   </div>
+    <div class="content">
+        <div class="forumNav" role="secondary navigation">
+            <a href="forum.html">Home</a><p> > </p><a href="post.html">Welcome</a> <!--build links here for nav-->
+        </div>
+        <div class="newTopic"  style="float: right">
+            <form>
+                <a href="newDisc.html">New Discussion</a>
+            </form>
+        </div>
+        <div class="forumCat">
+            <h1>Weclome</h1>
+        </div>
+<br>
+<div class="post" id="post">
+    <tbody>
+        <tr>        
+        <div class="entryCreator"> <!--Jscript to write additional elements here-->
+            <p><strong>Rooty McRoot Root</strong></p>
+            <div class="entry">
+            <p>Hello I am new here!</p>
+            </div>
+        </div>
+        </tr>
+        <tr>
+        <div class="entryCreator">
+            <p><strong>Billy Bob Billy</strong></p>
+            <div class="entry">
+            <p>Go away this is the internet and everyone is mean</p>
+            </div>
+        </div>
+        </tr>
+    </tbody>
+</div>
+    <div class="formFields">
+        <form action="forums/posts/create?topic_id=1234" method="post" name="forum_addPost"></form>
+        Reply:<br>
+        <input id="next" name="next" type="hidden">
+        <textarea style="width:95%; height: 250px;" name="post[body]" id="postBody"></textarea> <br>
+        <input type="submit" name="post" value="Post" onclick="post()">
+        </form>
+    </div>
+</div>
+</div>
+<div class = "footer">
+    <footer>© 2020 Copyright: Connor Young.</footer>
+</div>
+
+<script src="js/jsMain.js"></script>
+</body>

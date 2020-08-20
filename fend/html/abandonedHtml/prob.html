@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!--page removed from website as struggling to complete within time constraint-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta hhtp-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Probability Calucator</title>
+</head>
+<body>
+    <div class="myNav">
+        <a class="Logo" href="index.html">
+            <img id="navLogo" class="Logo" src="images/mathammer.png" alt="Logo">
+        </a>
+       <nav class="navMenu" role="navigation">
+           <a href="index.html">Home</a>
+           <a href="prob.html">Probability</a>
+           <a href="forum.html">Community</a>
+           <a href="login.html">Log in/Sign up</a>
+           <!--Log in section/profile if logged in-->
+       </nav>
+   </div>
+    <div class="Banner">
+
+    </div>
+    <div class="content"> 
+        <div class="text">
+            <p>Here we are creating a Histogram Graph of the Probability of your rolls which, when compared to your target number, will give you the likelihood of you 
+                passing that roll. If you are trying to see if you can pass multiple tests in succession, simply take the result from the output and re-enter the 
+                the information into your next check.</p>
+        </div>
+        <label for="Dno">What dice are you rolling?</label>
+            <select name="Dno" id="Dno">
+                <option value="D2">D2</option>
+                <option value="D3">D3</option>
+                <option value="D4">D4</option>
+                <option value="D6">D6</option>
+                <option value="D10">D10</option>
+                <option value="D12">D12</otpion>
+                <option value="D20">D20</option>
+            </select>
+            <label for="Dice">Number of dice</label>
+            <input type="number" id="Dice" name="Dice" placeholder="1">
+            <label for="Mods">Net total of modifiers</label>  
+            <input type="number" id="mods" name="mods" placeholder="+1">
+            <label for="target">Target number</label>
+            <input  type="number" id="target" name="target" placeholder="3+">
+            <label for="reroll">Reroll's of 1?</label>
+            <input type="checkbox" id="reroll" name="reroll">
+    </div>
+    <div class = "footer">
+        <footer>© 2020 Copyright: Connor Young.</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!--Template for the website that will allow for additonal expansion-->
+<html lang="en"> <!--My template-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta hhtp-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="js/jsMain.js"></script>
+    <title>Weclome Post</title>
+</head>
+<body>
+    <div class="myNav">
+        <a class="Logo" href="index.html">
+           <img id="navLogo" class="Logo" src="images/mathammer.png" alt="Logo">
+        </a>
+       <nav class="navMenu" role="navigation">
+           <a href="index.html">Home</a>
+           <a href="forum.html">Community</a>
+           <a href="login.html">Log in/Sign up</a>
+           <!--Log in section/profile & signout if logged in-->
+       </nav>
+   </div>
+    <div class="content">
+    <div class="formFields">
+        <form action="forums/posts/create?topic_id=1234" method="post" name="forum_newDisc">
+        Where do you want this post to go:<br>    
+        <select name="Topic" id="Topic" style="width:95%">
+            <option value="1">Weclome to the Forums</option>
+            <option value="2">Report for Duty</option>
+            <option value="3">Mathammer</option>
+        </select> <br>
+        New Post:<br>
+        <input id="next" name="next" type="hidden">
+        <textarea style="width:95%; height: 250px;" name="post[body]" id="postBody"></textarea> <br>
+        <input type="submit" name="post" value="Post" onclick="newDisc()">
+        </form>
+    </div>
+</div>
+</div>
+<div class = "footer">
+    <footer>© 2020 Copyright: Connor Young.</footer>
+</div>
+</body>

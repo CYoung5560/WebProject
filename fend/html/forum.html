@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta hhtp-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Community</title>
+</head>
+<body>
+    <div class="myNav">
+        <a class="Logo" href="index.html">
+           <img id="navLogo" class="Logo" src="images/mathammer.png" alt="Logo">
+        </a>
+       <nav class="navMenu" role="navigation">
+           <a href="index.html">Home</a>
+           <a href="forum.html">Community</a>
+           <a href="login.html">Log in/Sign up</a>
+           <!--Log in section/profile & signout if logged in-->
+       </nav>
+   </div>
+    <div class="content">
+        <div class="forumNav" role="secondary navigation">
+            <a href="forum.html">Home</a> <!--build links here for nav-->
+        </div>
+        <div class="newTopic"  style="float: right">
+            <form>
+                <a href="newDisc.html">New Discussion</a>
+            </form>
+        </div>
+        <div class="forumCat">
+            <h1>Weclome</h1>
+        </div>
+<br>
+            <div id="cat_1" class="categoryDisplay" cellpadding="3" cellspacing="0">
+                <h4 class="forumName" role="button" onclick="showDiscussions(1)">
+                        Welcome to The Forums                 
+                    </h4>
+                </a>
+                <span class="forumTitleDescription">
+                        <p><strong>Introduce yourself!</strong><br>
+                        Start your first topic here and get to meet other members!<p>
+                </span>
+            </div>     
+            <div id="cat_discussions_1" class="entryTab" style="display: block;">
+                <table class="forumTable">
+                    <thead>
+                        <th>
+                            Discussion
+                        </th>
+                        <th>
+                            Creator
+                        </th>
+                        <th style="float: right;">
+                            Replies
+                        </th>
+                    </thead>
+                    <tr class="forumModule"> <!-- generate a new module for each new topic posted-->
+                        <td>
+                            <a href="post.html">Welcome</a><!-- Link to actual discussion -->
+                        </td>
+                        <td>
+                            <a href="#">Rooty McRoot Root</a><!-- Pull link to account page, creator is creator of first entry in SQL-->
+                        </td>
+                        <td style="float: right;">
+                            1 <!-- total number of posts in discussion-->
+                        </td>
+                    </tr>
+                </table>  
+            </div>
+        <br>  
+        <div id="cat_2" class="categoryDisplay" cellpadding="3" cellspacing="0">
+            <a href="#" onclick="showDiscussions(2)">
+                <h4 class="forumName" style="float: left">
+                    Report for Duty               
+                </h4>
+            </a>
+            <span class="forumTitleDescription">
+                <p><strong>Your forces</strong><br>
+                Post your army lists, lore for them and more!</p>
+            </span>
+        </div>     
+        <div id="cat_discussions_2" class="entryTab" style="display: block;">
+            <table class="forumTable">
+                <thead>
+                    <th>
+                        Discussion
+                    </th>
+                    <th>
+                        Creator
+                    </th>
+                    <th style="float: right;">
+                        Replies
+                    </th>
+                </thead>
+                <tr class="forumModule"> <!-- generate a new module for each new topic posted-->
+                    <td>
+                        <a href="post.html">NULL</a><!-- Link to actual discussion -->
+                    </td>
+                    <td>
+                        <a href="#">NULL</a><!-- Pull link to account page, creator is creator of first entry in SQL-->
+                    </td>
+                    <td style="float: right;">
+                        0 <!-- total number of posts in discussion-->
+                    </td>
+                </tr>
+            </table>  
+        <br>
+        <div id="cat_2" class="categoryDisplay" cellpadding="3" cellspacing="0">
+            <a href="#" onclick="showDiscussions(3)">
+                <h4 class="forumName" style="float: left">
+                    Mathammer             
+                </h4>
+            </a>
+            <span class="forumTitleDescription">
+                <p><strong>Put the H in Math!</strong> <br>
+                Discuss army theories and Probability</p>
+            </span>
+        </div>     
+        <div id="cat_discussions_3" class="entryTab" style="display: block;">
+            <table class="forumTable">
+                <thead>
+                    <th>
+                        Discussion
+                    </th>
+                    <th>
+                        Creator
+                    </th>
+                    <th style="float: right;">
+                        Replies
+                    </th>
+                </thead>
+                <tr class="forumModule"> <!-- generate a new module for each new topic posted-->
+                    <td>
+                        <a href="post.html">NULL</a><!-- Link to actual discussion -->
+                    </td>
+                    <td>
+                        <a href="#">NULL</a><!-- Pull link to account page, creator is creator of first entry in SQL-->
+                    </td>
+                    <td style="float: right;">
+                        0 <!-- total number of posts in discussion-->
+                    </td>
+                </tr>
+            </table>  
+    <br>
+    </div>
+    <div class = "footer">
+        <footer>© 2020 Copyright: Connor Young.</footer>
+    </div>
+<script>
+
+
+</script>
+<script src="js/jsMain.js"></script>
+</body>
+</html>
